@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// Test for GitHub. Nice comment! :o
+// Test for branches...
 
 struct ContentView: View {
     var body: some View {
