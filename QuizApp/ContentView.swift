@@ -8,23 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var categories = Categories()
+    @StateObject var sets = Sets()
     @State private var showingAddCategory = false
 
     var body: some View {
         NavigationView {
             List {
-                ForEach(categories.items) { item in
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text(item.title)
-                                .font(.headline)
-                            Text(item.subject)
+                ForEach(sets.items) { item in
+                    NavigationLink(destination: CardSetView(cardSet: item)) {
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(item.title)
+                                    .font(.headline)
+                                Text(item.subject)
+                            }
+                            
+                            Spacer()
+                            
+                            Text(item.dateCreated, format: .dateTime.day().month().year())
                         }
-                        
-                        Spacer()
-                        
-                        Text("Card Amount: 10")
                     }
                 }
                 .onDelete(perform: removeItems)
@@ -38,12 +40,12 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $showingAddCategory) {
-                AddIndexCatagory(categories: categories)
+                AddIndexSet(sets: sets)
             }
         }
     }
     func removeItems(at offsets: IndexSet) {
-        categories.items.remove(atOffsets: offsets)
+        sets.items.remove(atOffsets: offsets)
     }
 }
 

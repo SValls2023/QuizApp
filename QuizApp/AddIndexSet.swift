@@ -7,13 +7,15 @@
 
 import SwiftUI
 
-struct AddIndexCatagory: View {
-    @ObservedObject var categories: Categories
+struct AddIndexSet: View {
+    @ObservedObject var sets: Sets
     @Environment(\.dismiss) var dismiss
     
     @State private var title = ""
     @State private var subject = "English"
     @State private var description = ""
+    @State private var numberOfCards = 0
+    @State private var dateCreated = Date.now
     
     let subjects = ["English", "History", "Math", "Science"]
     
@@ -30,11 +32,11 @@ struct AddIndexCatagory: View {
                 
                 TextField("Description", text: $description)
             }
-            .navigationTitle("Add new category")
+            .navigationTitle("Add new card set")
             .toolbar {
                 Button("Save") {
-                    let item = IndexCardCategory(title: title, subject: subject, decription: description)
-                    categories.items.append(item)
+                    let item = IndexCardSet(title: title, subject: subject, decription: description, numberOfCards: numberOfCards, dateCreated: dateCreated)
+                    sets.items.append(item)
                     dismiss()
                 }
             }
@@ -44,6 +46,6 @@ struct AddIndexCatagory: View {
 
 struct AddIndexCatagory_Previews: PreviewProvider {
     static var previews: some View {
-        AddIndexCatagory(categories: Categories())
+        AddIndexSet(sets: Sets())
     }
 }

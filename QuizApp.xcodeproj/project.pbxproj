@@ -14,10 +14,11 @@
 		7A1F7092292F0B7400ECA565 /* QuizAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1F7091292F0B7400ECA565 /* QuizAppTests.swift */; };
 		7A1F709C292F0B7400ECA565 /* QuizAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1F709B292F0B7400ECA565 /* QuizAppUITests.swift */; };
 		7A1F709E292F0B7400ECA565 /* QuizAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1F709D292F0B7400ECA565 /* QuizAppUITestsLaunchTests.swift */; };
-		7A7EDC6B29452FC700B33810 /* AddIndexCatagory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EDC6A29452FC700B33810 /* AddIndexCatagory.swift */; };
+		7A7EDC6B29452FC700B33810 /* AddIndexSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EDC6A29452FC700B33810 /* AddIndexSet.swift */; };
 		7A7EDC6D2945332700B33810 /* IndexCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EDC6C2945332700B33810 /* IndexCard.swift */; };
-		7A7EDC6F294537E100B33810 /* IndexCardCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EDC6E294537E100B33810 /* IndexCardCategory.swift */; };
-		7A7EDC712945393700B33810 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EDC702945393700B33810 /* Categories.swift */; };
+		7A7EDC6F294537E100B33810 /* IndexCardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EDC6E294537E100B33810 /* IndexCardSet.swift */; };
+		7A7EDC712945393700B33810 /* Sets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EDC702945393700B33810 /* Sets.swift */; };
+		7A7EDC7329454C0E00B33810 /* CardSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EDC7229454C0E00B33810 /* CardSetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +49,11 @@
 		7A1F7097292F0B7400ECA565 /* QuizAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A1F709B292F0B7400ECA565 /* QuizAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppUITests.swift; sourceTree = "<group>"; };
 		7A1F709D292F0B7400ECA565 /* QuizAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		7A7EDC6A29452FC700B33810 /* AddIndexCatagory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIndexCatagory.swift; sourceTree = "<group>"; };
+		7A7EDC6A29452FC700B33810 /* AddIndexSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIndexSet.swift; sourceTree = "<group>"; };
 		7A7EDC6C2945332700B33810 /* IndexCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexCard.swift; sourceTree = "<group>"; };
-		7A7EDC6E294537E100B33810 /* IndexCardCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexCardCategory.swift; sourceTree = "<group>"; };
-		7A7EDC702945393700B33810 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		7A7EDC6E294537E100B33810 /* IndexCardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexCardSet.swift; sourceTree = "<group>"; };
+		7A7EDC702945393700B33810 /* Sets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sets.swift; sourceTree = "<group>"; };
+		7A7EDC7229454C0E00B33810 /* CardSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +106,10 @@
 			children = (
 				7A1F7080292F0B7200ECA565 /* QuizAppApp.swift */,
 				7A1F7082292F0B7200ECA565 /* ContentView.swift */,
-				7A7EDC6A29452FC700B33810 /* AddIndexCatagory.swift */,
-				7A7EDC702945393700B33810 /* Categories.swift */,
-				7A7EDC6E294537E100B33810 /* IndexCardCategory.swift */,
+				7A7EDC6A29452FC700B33810 /* AddIndexSet.swift */,
+				7A7EDC7229454C0E00B33810 /* CardSetView.swift */,
+				7A7EDC702945393700B33810 /* Sets.swift */,
+				7A7EDC6E294537E100B33810 /* IndexCardSet.swift */,
 				7A7EDC6C2945332700B33810 /* IndexCard.swift */,
 				7A1F7084292F0B7400ECA565 /* Assets.xcassets */,
 				7A1F7086292F0B7400ECA565 /* Preview Content */,
@@ -270,11 +273,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A7EDC6D2945332700B33810 /* IndexCard.swift in Sources */,
-				7A7EDC6F294537E100B33810 /* IndexCardCategory.swift in Sources */,
+				7A7EDC7329454C0E00B33810 /* CardSetView.swift in Sources */,
+				7A7EDC6F294537E100B33810 /* IndexCardSet.swift in Sources */,
 				7A1F7083292F0B7200ECA565 /* ContentView.swift in Sources */,
-				7A7EDC6B29452FC700B33810 /* AddIndexCatagory.swift in Sources */,
+				7A7EDC6B29452FC700B33810 /* AddIndexSet.swift in Sources */,
 				7A1F7081292F0B7200ECA565 /* QuizAppApp.swift in Sources */,
-				7A7EDC712945393700B33810 /* Categories.swift in Sources */,
+				7A7EDC712945393700B33810 /* Sets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
