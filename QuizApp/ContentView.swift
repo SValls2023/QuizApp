@@ -7,17 +7,45 @@
 
 import SwiftUI
 
-// Test for branches...
-
 struct ContentView: View {
+    @StateObject var sets = Sets()
+    @State private var showingAddCategory = false
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                ForEach(sets.items) { item in
+                    NavigationLink(destination: CardSetView(cardSet: item)) {
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(item.title)
+                                    .font(.headline)
+                                Text(item.subject)
+                            }
+                            
+                            Spacer()
+                            
+                            Text(item.dateCreated, format: .dateTime.day().month().year())
+                        }
+                    }
+                }
+                .onDelete(perform: removeItems)
+            }
+            .navigationTitle("Index Cards")
+            .toolbar {
+                Button {
+                    showingAddCategory = true
+                } label: {
+                    Image(systemName: "plus")
+                }
+            }
+            .sheet(isPresented: $showingAddCategory) {
+                AddIndexSet(sets: sets)
+            }
         }
-        .padding()
+    }
+    func removeItems(at offsets: IndexSet) {
+        sets.items.remove(atOffsets: offsets)
     }
 }
 
