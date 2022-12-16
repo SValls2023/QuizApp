@@ -10,14 +10,15 @@ import SwiftUI
 struct main_view: View {
     var body: some View {
         TabView {
-            NotesView()
-                .tabItem {
-                    Label("Notes", systemImage: "note")
-                }
             
             ContentView()
                 .tabItem {
                     Label("Terms", systemImage: "rectangle.and.pencil.and.ellipsis")
+                }
+            
+            NotesView()
+                .tabItem {
+                    Label("Notes", systemImage: "note")
                 }
             
             TimerView()
