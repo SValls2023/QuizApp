@@ -31,7 +31,7 @@ struct ContentView: View {
                 }
                 .onDelete(perform: removeItems)
             }
-            .navigationTitle("Index Cards")
+            .navigationTitle("Index Card Sets")
             .toolbar {
                 Button {
                     showingAddCategory = true

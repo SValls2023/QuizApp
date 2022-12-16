@@ -44,7 +44,7 @@ struct AddIndexSet: View {
     }
 }
 
-struct AddIndexCatagory_Previews: PreviewProvider {
+struct AddIndexSet_Previews: PreviewProvider {
     static var previews: some View {
         AddIndexSet(sets: Sets())
     }
