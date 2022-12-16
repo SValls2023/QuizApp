@@ -36,7 +36,7 @@ struct AddIndexSet: View {
             .toolbar {
                 Button("Save") {
                     let item = IndexCardSet(title: title, subject: subject, decription: description, numberOfCards: numberOfCards, dateCreated: dateCreated)
-                    sets.items.append(item)
+                    sets.cardSets.append(item)
                     dismiss()
                 }
             }

@@ -14,18 +14,18 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(sets.items) { item in
-                    NavigationLink(destination: CardSetView(cardSet: item)) {
+                ForEach(sets.cardSets) { cardSet in
+                    NavigationLink(destination: CardSetView(cardSet: cardSet)) {
                         HStack {
                             VStack(alignment: .leading) {
-                                Text(item.title)
+                                Text(cardSet.title)
                                     .font(.headline)
-                                Text(item.subject)
+                                Text(cardSet.subject)
                             }
                             
                             Spacer()
                             
-                            Text(item.dateCreated, format: .dateTime.day().month().year())
+                            Text(cardSet.dateCreated, format: .dateTime.day().month().year())
                         }
                     }
                 }
@@ -45,7 +45,7 @@ struct ContentView: View {
         }
     }
     func removeItems(at offsets: IndexSet) {
-        sets.items.remove(atOffsets: offsets)
+        sets.cardSets.remove(atOffsets: offsets)
     }
 }
 

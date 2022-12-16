@@ -15,25 +15,27 @@ struct CardSetView: View {
     let cardSet: IndexCardSet
     
     var body: some View {
-        ScrollView {
-            VStack {
+        List {
+            Section {
                 Text(cardSet.decription)
+                    .padding()
+            } header: {
+                Text("Description")
             }
                 
-            Divider()
 
             Section {
                 ForEach(cards.items) { item in
                     NavigationLink(destination: CardView(card: item)) {
                         HStack {
-                            VStack(alignment: .leading) {
-                                Text(item.term)
-                                    .font(.headline)
-                            }
+                            Text(item.term)
+                                .font(.headline)
                         }
                     }
                 }
                 .onDelete(perform: removeItems)
+            } header: {
+                Text("Terms")
             }
         }
         .navigationTitle(cardSet.title)
@@ -56,7 +58,7 @@ struct CardSetView: View {
 
 struct CardSetView_Previews: PreviewProvider {
     static var previews: some View {
-        let itemSet: [IndexCardSet] = Sets().items
+        let itemSet: [IndexCardSet] = Sets().cardSets
         CardSetView(cardSet: itemSet[0])
     }
 }

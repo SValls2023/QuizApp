@@ -17,6 +17,7 @@
 		7A693F40294C281800A17C8A /* AddIndexCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A693F3F294C281800A17C8A /* AddIndexCard.swift */; };
 		7A693F42294C285200A17C8A /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A693F41294C285200A17C8A /* Cards.swift */; };
 		7A693F46294C3C9C00A17C8A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A693F45294C3C9C00A17C8A /* CardView.swift */; };
+		7A693F48294C4C9B00A17C8A /* main_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A693F47294C4C9B00A17C8A /* main_view.swift */; };
 		7A7EDC6B29452FC700B33810 /* AddIndexSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EDC6A29452FC700B33810 /* AddIndexSet.swift */; };
 		7A7EDC6D2945332700B33810 /* IndexCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EDC6C2945332700B33810 /* IndexCard.swift */; };
 		7A7EDC6F294537E100B33810 /* IndexCardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7EDC6E294537E100B33810 /* IndexCardSet.swift */; };
@@ -55,6 +56,7 @@
 		7A693F3F294C281800A17C8A /* AddIndexCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIndexCard.swift; sourceTree = "<group>"; };
 		7A693F41294C285200A17C8A /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
 		7A693F45294C3C9C00A17C8A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		7A693F47294C4C9B00A17C8A /* main_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main_view.swift; sourceTree = "<group>"; };
 		7A7EDC6A29452FC700B33810 /* AddIndexSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIndexSet.swift; sourceTree = "<group>"; };
 		7A7EDC6C2945332700B33810 /* IndexCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexCard.swift; sourceTree = "<group>"; };
 		7A7EDC6E294537E100B33810 /* IndexCardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexCardSet.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				7A1F7080292F0B7200ECA565 /* QuizAppApp.swift */,
+				7A693F47294C4C9B00A17C8A /* main_view.swift */,
 				7A1F7082292F0B7200ECA565 /* ContentView.swift */,
 				7A7EDC7229454C0E00B33810 /* CardSetView.swift */,
 				7A693F45294C3C9C00A17C8A /* CardView.swift */,
@@ -286,6 +289,7 @@
 				7A7EDC7329454C0E00B33810 /* CardSetView.swift in Sources */,
 				7A693F42294C285200A17C8A /* Cards.swift in Sources */,
 				7A693F46294C3C9C00A17C8A /* CardView.swift in Sources */,
+				7A693F48294C4C9B00A17C8A /* main_view.swift in Sources */,
 				7A7EDC6F294537E100B33810 /* IndexCardSet.swift in Sources */,
 				7A1F7083292F0B7200ECA565 /* ContentView.swift in Sources */,
 				7A7EDC6B29452FC700B33810 /* AddIndexSet.swift in Sources */,
