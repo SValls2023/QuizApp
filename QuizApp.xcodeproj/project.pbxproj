@@ -14,6 +14,7 @@
 		7A1F7092292F0B7400ECA565 /* QuizAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1F7091292F0B7400ECA565 /* QuizAppTests.swift */; };
 		7A1F709C292F0B7400ECA565 /* QuizAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1F709B292F0B7400ECA565 /* QuizAppUITests.swift */; };
 		7A1F709E292F0B7400ECA565 /* QuizAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1F709D292F0B7400ECA565 /* QuizAppUITestsLaunchTests.swift */; };
+		7A5FAFF1294CE87C0039C91D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5FAFF0294CE87C0039C91D /* SettingsView.swift */; };
 		7A693F40294C281800A17C8A /* AddIndexCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A693F3F294C281800A17C8A /* AddIndexCard.swift */; };
 		7A693F42294C285200A17C8A /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A693F41294C285200A17C8A /* Cards.swift */; };
 		7A693F46294C3C9C00A17C8A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A693F45294C3C9C00A17C8A /* CardView.swift */; };
@@ -55,6 +56,7 @@
 		7A1F7097292F0B7400ECA565 /* QuizAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A1F709B292F0B7400ECA565 /* QuizAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppUITests.swift; sourceTree = "<group>"; };
 		7A1F709D292F0B7400ECA565 /* QuizAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7A5FAFF0294CE87C0039C91D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		7A693F3F294C281800A17C8A /* AddIndexCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIndexCard.swift; sourceTree = "<group>"; };
 		7A693F41294C285200A17C8A /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
 		7A693F45294C3C9C00A17C8A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				7A693F47294C4C9B00A17C8A /* main_view.swift */,
 				7A693F49294C5EAF00A17C8A /* NotesView.swift */,
 				7A693F4B294CD6D300A17C8A /* TimerView.swift */,
+				7A5FAFF0294CE87C0039C91D /* SettingsView.swift */,
 				7A1F7082292F0B7200ECA565 /* ContentView.swift */,
 				7A7EDC7229454C0E00B33810 /* CardSetView.swift */,
 				7A693F45294C3C9C00A17C8A /* CardView.swift */,
@@ -297,6 +300,7 @@
 				7A693F42294C285200A17C8A /* Cards.swift in Sources */,
 				7A693F4C294CD6D300A17C8A /* TimerView.swift in Sources */,
 				7A693F46294C3C9C00A17C8A /* CardView.swift in Sources */,
+				7A5FAFF1294CE87C0039C91D /* SettingsView.swift in Sources */,
 				7A693F48294C4C9B00A17C8A /* main_view.swift in Sources */,
 				7A7EDC6F294537E100B33810 /* IndexCardSet.swift in Sources */,
 				7A1F7083292F0B7200ECA565 /* ContentView.swift in Sources */,

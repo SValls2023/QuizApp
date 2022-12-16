@@ -22,7 +22,12 @@ struct main_view: View {
             
             TimerView()
                 .tabItem{
-                    Label("Timer", systemImage: "clock.circle")
+                    Label("Game", systemImage: "gamecontroller")
+                }
+            
+            SettingsView()
+                .tabItem {
+                    Label("Settings", systemImage: "gear")
                 }
         }
     }
