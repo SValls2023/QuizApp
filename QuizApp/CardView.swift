@@ -11,12 +11,12 @@ struct CardView: View {
     let card: IndexCard
         
         var body: some View {
-            ScrollView {
+            NavigationView {
                 VStack {
                     Text(card.definition)
                 }
-                .navigationTitle(card.term)
             }
+            .navigationTitle(card.term)
         }
     }
 
