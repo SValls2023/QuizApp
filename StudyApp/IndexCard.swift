@@ -9,6 +9,6 @@ import Foundation
 
 struct IndexCard: Identifiable, Codable {
     var id = UUID()
-    let word: String
+    let term: String
     let definition: String
 }

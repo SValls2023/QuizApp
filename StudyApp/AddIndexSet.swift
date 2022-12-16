@@ -36,7 +36,7 @@ struct AddIndexSet: View {
             .toolbar {
                 Button("Save") {
                     let item = IndexCardSet(title: title, subject: subject, decription: description, numberOfCards: numberOfCards, dateCreated: dateCreated)
-                    sets.items.append(item)
+                    sets.cardSets.append(item)
                     dismiss()
                 }
             }
@@ -44,7 +44,7 @@ struct AddIndexSet: View {
     }
 }
 
-struct AddIndexCatagory_Previews: PreviewProvider {
+struct AddIndexSet_Previews: PreviewProvider {
     static var previews: some View {
         AddIndexSet(sets: Sets())
     }
