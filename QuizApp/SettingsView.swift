@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @AppStorage("isDarkMode") private var isDarkMode = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                HStack{
+                    Toggle("Dark Mode", isOn: $isDarkMode)
+                }
+            }
+            .navigationTitle("Settings")
+        }
     }
 }
 
